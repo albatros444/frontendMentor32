@@ -1,0 +1,85 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
+  padding: 42px 165px;
+  background-color: black;
+  &__left {
+    img {
+      width: 143px;
+      padding-bottom: 25px;
+    }
+    .footerLinksBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 380px;
+      a {
+        position: relative;
+        display: inline-block;
+        height: 33px;
+        font-family: $alata;
+        color: white;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 55%;
+          right: 55%;
+          bottom: 0;
+          border: 1px solid white;
+          opacity: 0;
+          transition: $trans;
+        }
+        &:hover {
+          &::after {
+            left: 25%;
+            right: 25%;
+            opacity: 100%;
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    width: 280px;
+    .socialLinks {
+      display: flex;
+      justify-content: end;
+      margin-bottom: 30px;
+      div {
+        position: relative;
+        margin-left: 14px;
+        padding-bottom: 7px;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          right: 50%;
+          bottom: 0;
+          border: 1px solid white;
+          opacity: 0;
+          transition: $trans;
+        }
+        &:hover {
+          &::after {
+            left: 0%;
+            right: 0%;
+            opacity: 100%;
+          }
+        }
+        img {
+          display: inline-block;
+          cursor: pointer;
+        }
+      }
+    }
+    .privacyPolicy {
+      display: flex;
+      justify-content: end;
+      p {
+        font-family: $alata;
+        color: hsl(0, 0%, 41%);
+      }
+    }
+  }
+}

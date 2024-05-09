@@ -1,0 +1,328 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  position: relative;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+textarea,
+input {
+  outline: none;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  margin: auto;
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 55%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.hero {
+  height: 650px;
+  padding: 60px 162px 0px 165px;
+  background-image: url(/images/desktop/image-hero.jpg);
+}
+.hero .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.hero .navbar .linksBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+}
+.hero .navbar .linksBox a {
+  position: relative;
+  display: inline-block;
+  height: 33px;
+  font-family: "Alata", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+.hero .navbar .linksBox a::after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  right: 55%;
+  bottom: 0;
+  border: 1px solid white;
+  opacity: 0;
+  transition: all 0.13s ease-in-out;
+}
+.hero .navbar .linksBox a:hover::after {
+  left: 25%;
+  right: 25%;
+  opacity: 100%;
+}
+.hero .framedTitle {
+  width: 650px;
+  height: 278px;
+  padding: 33px;
+  border: 2px solid white;
+}
+.hero .framedTitle h1 {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.vrMan {
+  padding: 165px;
+}
+.vrMan__img {
+  position: relative;
+  width: 730px;
+  height: 500px;
+  background-image: url(/images/desktop/image-interactive.jpg);
+}
+.vrMan__text {
+  position: absolute;
+  top: 181px;
+  right: -368px;
+  width: 540px;
+  height: 320px;
+  padding-left: 95px;
+  padding-top: 95px;
+  background-color: white;
+}
+.vrMan__text h2 {
+  margin-bottom: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.vrMan__text p {
+  font-family: "Alata", sans-serif;
+  line-height: 1.7;
+  color: hsl(0, 0%, 55%);
+}
+
+.boxForGridTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 165px 70px;
+  padding-right: 165px;
+}
+.boxForGridTitle h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 44px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.boxForGridTitle button {
+  display: inline-block;
+  width: 157px;
+  height: 40px;
+  padding: 0;
+  border: 2px solid hsl(0, 0%, 41%);
+  outline: inherit;
+  cursor: pointer;
+  font-family: "Alata", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: white;
+  transition: all 0.13s ease-in-out;
+}
+.boxForGridTitle button:hover {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 500px 500px;
+  gap: 30px;
+  padding: 0 165px 170px;
+}
+.grid .gridElem {
+  position: relative;
+  cursor: pointer;
+}
+.grid .gridElem::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(/images/desktop/image-deep-earth.jpg) center/cover;
+  z-index: -50;
+  transition: all 0.11s ease-in-out;
+}
+.grid .gridElem:hover:before {
+  filter: opacity(25%);
+}
+.grid .gridElem:hover h3 {
+  color: black;
+}
+.grid .gridElem h3 {
+  padding-top: 377px;
+  padding-left: 40px;
+  padding-right: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  top: 20px;
+  z-index: 50;
+  transition: all 0.11s ease-in-out;
+}
+.grid .grid1:before {
+  background: url(/images/desktop/image-deep-earth.jpg) center/cover;
+}
+.grid .grid2:before {
+  background: url(/images/desktop/image-night-arcade.jpg) center/cover;
+}
+.grid .grid3:before {
+  background: url(/images/desktop/image-soccer-team.jpg) center/cover;
+}
+.grid .grid4:before {
+  background: url(/images/desktop/image-grid.jpg) center/cover;
+}
+.grid .grid5:before {
+  background: url(/images/desktop/image-from-above.jpg) center/cover;
+}
+.grid .grid6:before {
+  background: url(/images/desktop/image-pocket-borealis.jpg) center/cover;
+}
+.grid .grid7:before {
+  background: url(/images/desktop/image-curiosity.jpg) center/cover;
+}
+.grid .grid8:before {
+  background: url(/images/desktop/image-fisheye.jpg) center/cover;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
+  padding: 42px 165px;
+  background-color: black;
+}
+.footer__left img {
+  width: 143px;
+  padding-bottom: 25px;
+}
+.footer__left .footerLinksBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+}
+.footer__left .footerLinksBox a {
+  position: relative;
+  display: inline-block;
+  height: 33px;
+  font-family: "Alata", sans-serif;
+  color: white;
+}
+.footer__left .footerLinksBox a::after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  right: 55%;
+  bottom: 0;
+  border: 1px solid white;
+  opacity: 0;
+  transition: all 0.13s ease-in-out;
+}
+.footer__left .footerLinksBox a:hover::after {
+  left: 25%;
+  right: 25%;
+  opacity: 100%;
+}
+.footer__right {
+  width: 280px;
+}
+.footer__right .socialLinks {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 30px;
+}
+.footer__right .socialLinks div {
+  position: relative;
+  margin-left: 14px;
+  padding-bottom: 7px;
+}
+.footer__right .socialLinks div::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  border: 1px solid white;
+  opacity: 0;
+  transition: all 0.13s ease-in-out;
+}
+.footer__right .socialLinks div:hover::after {
+  left: 0%;
+  right: 0%;
+  opacity: 100%;
+}
+.footer__right .socialLinks div img {
+  display: inline-block;
+  cursor: pointer;
+}
+.footer__right .privacyPolicy {
+  display: flex;
+  justify-content: end;
+}
+.footer__right .privacyPolicy p {
+  font-family: "Alata", sans-serif;
+  color: hsl(0, 0%, 41%);
+}
+
+/*# sourceMappingURL=main.css.map */

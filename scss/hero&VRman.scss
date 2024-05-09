@@ -1,0 +1,90 @@
+.hero {
+  height: 650px;
+  padding: 60px 162px 0px 165px;
+
+  background-image: url(/images/desktop/image-hero.jpg);
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+    .linksBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 380px;
+      a {
+        position: relative;
+        display: inline-block;
+        height: 33px;
+        font-family: $alata;
+        font-weight: 500;
+        color: white;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 55%;
+          right: 55%;
+          bottom: 0;
+          border: 1px solid white;
+          opacity: 0;
+          transition: $trans;
+        }
+        &:hover {
+          &::after {
+            left: 25%;
+            right: 25%;
+            opacity: 100%;
+          }
+        }
+      }
+    }
+  }
+  .framedTitle {
+    width: 650px;
+    height: 278px;
+    padding: 33px;
+    border: 2px solid white;
+
+    h1 {
+      color: white;
+      font-family: $josefin;
+      font-size: 70px;
+      font-weight: 300;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.vrMan {
+  padding: 165px;
+  &__img {
+    position: relative;
+    width: 730px;
+    height: 500px;
+    background-image: url(/images/desktop/image-interactive.jpg);
+  }
+  &__text {
+    position: absolute;
+    top: 181px;
+    right: -368px;
+    width: 540px;
+    height: 320px;
+    padding-left: 95px;
+    padding-top: 95px;
+    background-color: white;
+    h2 {
+      margin-bottom: 30px;
+      font-family: $josefin;
+      font-size: 50px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: $alata;
+      line-height: 1.7;
+      color: hsl(0, 0%, 55%);
+    }
+  }
+}
