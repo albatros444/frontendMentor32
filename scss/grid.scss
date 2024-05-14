@@ -2,35 +2,35 @@
   display: flex;
   justify-content: space-between;
   padding: 0 165px 70px;
-  padding-right: 165px;
+  // padding-right: 165px;
   h2 {
     font-family: $josefin;
     font-size: 44px;
     font-weight: 300;
     text-transform: uppercase;
   }
-  button {
-    display: inline-block;
-    width: 157px;
-    height: 40px;
-    padding: 0;
-    border: 2px solid hsl(0, 0%, 41%);
-    outline: inherit;
-    cursor: pointer;
-    font-family: $alata;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.3em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: white;
-    transition: $trans;
-    &:hover {
-      background-color: black;
-      border: 2px solid black;
-      color: white;
-    }
+}
+.seeAllButton {
+  display: inline-block;
+  width: 157px;
+  height: 40px;
+  padding: 0;
+  border: 2px solid hsl(0, 0%, 41%);
+  outline: inherit;
+  cursor: pointer;
+  font-family: $alata;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: white;
+  transition: $trans;
+  &:hover {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
   }
 }
 .grid {
@@ -61,9 +61,7 @@
     }
 
     h3 {
-      padding-top: 377px;
-      padding-left: 40px;
-      padding-right: 30px;
+      padding: 377px 30px 0 40px;
       font-family: $josefin;
       font-size: 35px;
       font-weight: 300;
@@ -113,5 +111,8 @@
     &:before {
       background: url(/images/desktop/image-fisheye.jpg) center/cover;
     }
+  }
+  .seeAllButton {
+    display: none;
   }
 }

@@ -1,13 +1,13 @@
 .hero {
   height: 650px;
   padding: 60px 162px 0px 165px;
-
-  background-image: url(/images/desktop/image-hero.jpg);
+  background: url(/images/desktop/image-hero.jpg);
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 120px;
+
     .linksBox {
       display: flex;
       justify-content: space-between;
@@ -40,12 +40,17 @@
       }
     }
   }
+  .hamburger {
+    display: none;
+  }
+  .hamburgerModal {
+    display: none;
+  }
   .framedTitle {
     width: 650px;
     height: 278px;
     padding: 33px;
     border: 2px solid white;
-
     h1 {
       color: white;
       font-family: $josefin;
@@ -59,16 +64,16 @@
 
 .vrMan {
   padding: 165px;
+  position: relative;
   &__img {
-    position: relative;
-    width: 730px;
+    // width: 730px;
     height: 500px;
-    background-image: url(/images/desktop/image-interactive.jpg);
+    background: url(/images/desktop/image-interactive.jpg) no-repeat;
   }
   &__text {
     position: absolute;
-    top: 181px;
-    right: -368px;
+    top: 345px;
+    left: 724px;
     width: 540px;
     height: 320px;
     padding-left: 95px;

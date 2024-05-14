@@ -1,0 +1,69 @@
+@media screen and (max-width: 400px) {
+  .hero {
+    padding: 0;
+    background: url(/images/mobile/image-hero.jpg) left/cover;
+    // display: none;
+    ///navbar
+    @import "mediaQnavbar";
+    ////////
+    .framedTitle {
+      width: auto;
+      height: 195px;
+      margin: 0 23px;
+      padding: 23px;
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+  .vrMan {
+    display: none;
+    padding: 90px 25px 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    &__img {
+      width: auto;
+      height: 220px;
+      background: url(/images/mobile/image-interactive.jpg) center/contain
+        no-repeat;
+    }
+    &__text {
+      position: static;
+      width: auto;
+      text-align: center;
+
+      padding: 40px 20px;
+      h2 {
+        font-size: 32px;
+      }
+    }
+  }
+  @import "mediaQgrid";
+  .footer {
+    display: block;
+    height: 470px;
+    padding: 0;
+    &__left {
+      padding-top: 50px;
+      padding-bottom: 40px;
+      img {
+        display: block;
+        margin: auto;
+      }
+      .footerLinksBox {
+        flex-direction: column;
+
+        width: auto;
+      }
+    }
+    &__right {
+      width: 100%;
+      .socialLinks {
+        justify-content: center;
+      }
+      .privacyPolicy {
+        justify-content: center;
+      }
+    }
+  }
+}

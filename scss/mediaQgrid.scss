@@ -1,0 +1,70 @@
+.boxForGridTitle {
+  padding: 0;
+  justify-content: space-around;
+  margin-bottom: 45px;
+  h2 {
+    font-size: 30px;
+  }
+  .seeAllButton {
+    display: none;
+  }
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  //   display: none;
+  .gridElem {
+    height: 120px;
+    h3 {
+      padding: 45px 30px 0 20px;
+      width: 200px;
+      font-size: 25px;
+    }
+  }
+  .grid1 {
+    &:before {
+      background: url(/images/mobile/image-deep-earth.jpg) center/cover;
+    }
+  }
+  .grid2 {
+    &:before {
+      background: url(/images/mobile/image-night-arcade.jpg) center/cover;
+    }
+  }
+  .grid3 {
+    &:before {
+      background: url(/images/mobile/image-soccer-team.jpg) center/cover;
+    }
+  }
+  .grid4 {
+    &:before {
+      background: url(/images/mobile/image-grid.jpg) center/cover;
+    }
+  }
+  .grid5 {
+    &:before {
+      background: url(/images/mobile/image-from-above.jpg) center/cover;
+    }
+  }
+  .grid6 {
+    &:before {
+      background: url(/images/mobile/image-pocket-borealis.jpg) center/cover;
+    }
+  }
+  .grid7 {
+    &:before {
+      background: url(/images/mobile/image-curiosity.jpg) center/cover;
+    }
+  }
+  .grid8 {
+    &:before {
+      background: url(/images/mobile/image-fisheye.jpg) center/cover;
+    }
+  }
+  .seeAllButton {
+    align-self: center;
+    display: inline-block;
+    margin-bottom: 70px;
+  }
+}
