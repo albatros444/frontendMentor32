@@ -5,9 +5,10 @@
   padding: 42px 165px;
   background-color: black;
   &__left {
+    padding-top: 2px;
     img {
       width: 143px;
-      padding-bottom: 25px;
+      padding-bottom: 23px;
     }
     .footerLinksBox {
       display: flex;
@@ -42,13 +43,15 @@
   }
   &__right {
     width: 280px;
+    padding-top: 2px;
+
     .socialLinks {
       display: flex;
       justify-content: end;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       div {
         position: relative;
-        margin-left: 14px;
+        margin-left: 16px;
         padding-bottom: 7px;
         &::after {
           content: "";
@@ -70,6 +73,9 @@
         img {
           display: inline-block;
           cursor: pointer;
+        }
+        &:nth-child(2) {
+          padding-top: 2px;
         }
       }
     }

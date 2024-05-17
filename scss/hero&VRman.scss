@@ -1,13 +1,17 @@
 .hero {
   height: 650px;
-  padding: 60px 162px 0px 165px;
-  background: url(/images/desktop/image-hero.jpg);
+  padding: 65px 130px 0px 165px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/images/desktop/image-hero.jpg);
+  // display: none;
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 120px;
-
+    img {
+      padding-bottom: 3px;
+    }
     .linksBox {
       display: flex;
       justify-content: space-between;
@@ -49,7 +53,7 @@
   .framedTitle {
     width: 650px;
     height: 278px;
-    padding: 33px;
+    padding: 38px 40px 35px 39px;
     border: 2px solid white;
     h1 {
       color: white;
@@ -57,14 +61,16 @@
       font-size: 70px;
       font-weight: 300;
       line-height: 1;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
     }
   }
 }
 
 .vrMan {
-  padding: 165px;
+  padding: 160px 165px 180px;
   position: relative;
+  // display: none;
   &__img {
     // width: 730px;
     height: 500px;
@@ -72,23 +78,24 @@
   }
   &__text {
     position: absolute;
-    top: 345px;
-    left: 724px;
+    top: 343px;
+    left: 735px;
     width: 540px;
     height: 320px;
     padding-left: 95px;
     padding-top: 95px;
     background-color: white;
     h2 {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       font-family: $josefin;
-      font-size: 50px;
+      font-size: 48px;
       font-weight: 300;
       text-transform: uppercase;
+      line-height: 1;
     }
     p {
       font-family: $alata;
-      line-height: 1.7;
+      line-height: 1.65;
       color: hsl(0, 0%, 55%);
     }
   }

@@ -60,14 +60,17 @@ ul {
 
 .hero {
   height: 650px;
-  padding: 60px 162px 0px 165px;
-  background: url(/images/desktop/image-hero.jpg);
+  padding: 65px 130px 0px 165px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/desktop/image-hero.jpg);
 }
 .hero .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 120px;
+}
+.hero .navbar img {
+  padding-bottom: 3px;
 }
 .hero .navbar .linksBox {
   display: flex;
@@ -107,7 +110,7 @@ ul {
 .hero .framedTitle {
   width: 650px;
   height: 278px;
-  padding: 33px;
+  padding: 38px 40px 35px 39px;
   border: 2px solid white;
 }
 .hero .framedTitle h1 {
@@ -116,11 +119,12 @@ ul {
   font-size: 70px;
   font-weight: 300;
   line-height: 1;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
 .vrMan {
-  padding: 165px;
+  padding: 160px 165px 180px;
   position: relative;
 }
 .vrMan__img {
@@ -129,8 +133,8 @@ ul {
 }
 .vrMan__text {
   position: absolute;
-  top: 345px;
-  left: 724px;
+  top: 343px;
+  left: 735px;
   width: 540px;
   height: 320px;
   padding-left: 95px;
@@ -138,34 +142,37 @@ ul {
   background-color: white;
 }
 .vrMan__text h2 {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 300;
   text-transform: uppercase;
+  line-height: 1;
 }
 .vrMan__text p {
   font-family: "Alata", sans-serif;
-  line-height: 1.7;
+  line-height: 1.65;
   color: hsl(0, 0%, 55%);
 }
 
 .boxForGridTitle {
   display: flex;
   justify-content: space-between;
-  padding: 0 165px 70px;
+  align-items: center;
+  padding: 0 165px 77px;
 }
 .boxForGridTitle h2 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 44px;
+  font-size: 47px;
   font-weight: 300;
   text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .seeAllButton {
   display: inline-block;
-  width: 157px;
-  height: 40px;
+  width: 159px;
+  height: 42px;
   padding: 0;
   border: 2px solid hsl(0, 0%, 41%);
   outline: inherit;
@@ -173,7 +180,7 @@ ul {
   font-family: "Alata", sans-serif;
   font-size: 14px;
   font-weight: 300;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.35em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -189,9 +196,9 @@ ul {
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 500px 500px;
+  grid-template-rows: 450px 450px;
   gap: 30px;
-  padding: 0 165px 170px;
+  padding: 0 165px 185px;
 }
 .grid .gridElem {
   position: relative;
@@ -202,7 +209,6 @@ ul {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(/images/desktop/image-deep-earth.jpg) center/cover;
   z-index: -50;
   transition: all 0.11s ease-in-out;
 }
@@ -213,39 +219,41 @@ ul {
   color: black;
 }
 .grid .gridElem h3 {
-  padding: 377px 30px 0 40px;
+  padding: 355px 40px 0 40px;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 300;
   text-transform: uppercase;
+  line-height: 1;
   color: white;
-  top: 20px;
-  z-index: 50;
   transition: all 0.11s ease-in-out;
 }
 .grid .grid1:before {
-  background: url(/images/desktop/image-deep-earth.jpg) center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/desktop/image-deep-earth.jpg) center/cover;
 }
 .grid .grid2:before {
-  background: url(/images/desktop/image-night-arcade.jpg) center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/desktop/image-night-arcade.jpg) center/cover;
 }
 .grid .grid3:before {
-  background: url(/images/desktop/image-soccer-team.jpg) center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/desktop/image-soccer-team.jpg) center/cover;
 }
 .grid .grid4:before {
-  background: url(/images/desktop/image-grid.jpg) center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/desktop/image-grid.jpg) center/cover;
+}
+.grid .grid4 h3 {
+  padding-right: 70px;
 }
 .grid .grid5:before {
-  background: url(/images/desktop/image-from-above.jpg) center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/desktop/image-from-above.jpg) center/cover;
 }
 .grid .grid6:before {
-  background: url(/images/desktop/image-pocket-borealis.jpg) center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/desktop/image-pocket-borealis.jpg) center/cover;
 }
 .grid .grid7:before {
-  background: url(/images/desktop/image-curiosity.jpg) center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/desktop/image-curiosity.jpg) center/cover;
 }
 .grid .grid8:before {
-  background: url(/images/desktop/image-fisheye.jpg) center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/desktop/image-fisheye.jpg) center/cover;
 }
 .grid .seeAllButton {
   display: none;
@@ -258,9 +266,12 @@ ul {
   padding: 42px 165px;
   background-color: black;
 }
+.footer__left {
+  padding-top: 2px;
+}
 .footer__left img {
   width: 143px;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
 }
 .footer__left .footerLinksBox {
   display: flex;
@@ -292,15 +303,16 @@ ul {
 }
 .footer__right {
   width: 280px;
+  padding-top: 2px;
 }
 .footer__right .socialLinks {
   display: flex;
   justify-content: end;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .footer__right .socialLinks div {
   position: relative;
-  margin-left: 14px;
+  margin-left: 16px;
   padding-bottom: 7px;
 }
 .footer__right .socialLinks div::after {
@@ -322,6 +334,9 @@ ul {
   display: inline-block;
   cursor: pointer;
 }
+.footer__right .socialLinks div:nth-child(2) {
+  padding-top: 2px;
+}
 .footer__right .privacyPolicy {
   display: flex;
   justify-content: end;
@@ -338,8 +353,9 @@ ul {
   }
   .hero .navbar {
     position: relative;
-    padding-top: 30px;
+    padding-top: 40px;
     z-index: 100;
+    margin-bottom: 160px;
   }
   .hero .navbar img {
     width: 165px;
@@ -350,7 +366,7 @@ ul {
   }
   .hero .navbar .hamburger {
     display: block;
-    margin-right: 20px;
+    margin-right: 25px;
     cursor: pointer;
   }
   .hero .navbar .hamburger .line {
@@ -413,14 +429,15 @@ ul {
     transition: all 0.33s ease-in-out;
   }
   .hero .hamburgerModal .linksBoxModal {
-    padding-left: 23px;
+    padding-left: 24px;
+    padding-top: 16px;
     color: white;
   }
   .hero .hamburgerModal .linksBoxModal a {
     display: block;
     padding-bottom: 20px;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 300;
     text-transform: uppercase;
   }
@@ -431,40 +448,41 @@ ul {
   }
   .hero .framedTitle {
     width: auto;
-    height: 195px;
+    height: auto;
     margin: 0 23px;
-    padding: 23px;
+    padding: 25px 23px 17px;
   }
   .hero .framedTitle h1 {
-    font-size: 40px;
+    font-size: 39px;
+    line-height: 0.97;
   }
   .vrMan {
-    display: none;
-    padding: 90px 25px 40px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 95px 20px 50px;
   }
   .vrMan__img {
     width: auto;
-    height: 220px;
+    height: 225px;
     background: url(/images/mobile/image-interactive.jpg) center/contain no-repeat;
   }
   .vrMan__text {
     position: static;
     width: auto;
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px 30px;
   }
   .vrMan__text h2 {
     font-size: 32px;
+    margin-bottom: 17px;
   }
   .boxForGridTitle {
     padding: 0;
     justify-content: space-around;
+    margin-top: 25px;
     margin-bottom: 45px;
   }
   .boxForGridTitle h2 {
-    font-size: 30px;
+    font-size: 32px;
+    letter-spacing: normal;
   }
   .boxForGridTitle .seeAllButton {
     display: none;
@@ -473,66 +491,82 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 0 25px;
+    gap: 23px;
   }
   .grid .gridElem {
-    height: 120px;
+    height: 121px;
   }
   .grid .gridElem h3 {
-    padding: 45px 30px 0 20px;
-    width: 200px;
-    font-size: 25px;
+    padding: 52px 30px 0 20px;
+    width: 180px;
+    font-size: 24px;
+    color: hsl(0, 0%, 90%);
+  }
+  .grid .gridElem:nth-child(4) h3 {
+    width: 60px;
   }
   .grid .grid1:before {
-    background: url(/images/mobile/image-deep-earth.jpg) center/cover;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/mobile/image-deep-earth.jpg) center/cover;
   }
   .grid .grid2:before {
-    background: url(/images/mobile/image-night-arcade.jpg) center/cover;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/mobile/image-night-arcade.jpg) center/cover;
   }
   .grid .grid3:before {
-    background: url(/images/mobile/image-soccer-team.jpg) center/cover;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/mobile/image-soccer-team.jpg) center/cover;
   }
   .grid .grid4:before {
-    background: url(/images/mobile/image-grid.jpg) center/cover;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/mobile/image-grid.jpg) center/cover;
   }
   .grid .grid5:before {
-    background: url(/images/mobile/image-from-above.jpg) center/cover;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/mobile/image-from-above.jpg) center/cover;
   }
   .grid .grid6:before {
-    background: url(/images/mobile/image-pocket-borealis.jpg) center/cover;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/mobile/image-pocket-borealis.jpg) center/cover;
   }
   .grid .grid7:before {
-    background: url(/images/mobile/image-curiosity.jpg) center/cover;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/mobile/image-curiosity.jpg) center/cover;
   }
   .grid .grid8:before {
-    background: url(/images/mobile/image-fisheye.jpg) center/cover;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6)), url(/images/mobile/image-fisheye.jpg) center/cover;
   }
   .grid .seeAllButton {
     align-self: center;
     display: inline-block;
-    margin-bottom: 70px;
+    margin-bottom: 95px;
+    margin-top: 10px;
+    border: 1px solid hsl(0, 0%, 41%);
+    box-shadow: 1px 1px 1px rgb(214, 213, 213) inset, -1px -1px 1px rgb(223, 223, 223) inset;
   }
   .footer {
     display: block;
-    height: 470px;
+    height: 468px;
     padding: 0;
   }
   .footer__left {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 57px;
+    padding-bottom: 30px;
   }
   .footer__left img {
     display: block;
-    margin: auto;
+    margin: 0 auto 10px;
   }
   .footer__left .footerLinksBox {
     flex-direction: column;
     width: auto;
+  }
+  .footer__left .footerLinksBox a {
+    margin-bottom: 8px;
+    color: hsl(0, 0%, 90%);
   }
   .footer__right {
     width: 100%;
   }
   .footer__right .socialLinks {
     justify-content: center;
+    margin-bottom: 7px;
+  }
+  .footer__right .socialLinks div:nth-child(1) {
+    margin-left: 0;
   }
   .footer__right .privacyPolicy {
     justify-content: center;

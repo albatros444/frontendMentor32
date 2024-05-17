@@ -2,28 +2,25 @@
   .hero {
     padding: 0;
     background: url(/images/mobile/image-hero.jpg) left/cover;
-    // display: none;
     ///navbar
     @import "mediaQnavbar";
     ////////
     .framedTitle {
       width: auto;
-      height: 195px;
+      height: auto;
       margin: 0 23px;
-      padding: 23px;
+      padding: 25px 23px 17px;
       h1 {
-        font-size: 40px;
+        font-size: 39px;
+        line-height: 0.97;
       }
     }
   }
   .vrMan {
-    display: none;
-    padding: 90px 25px 40px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 95px 20px 50px;
     &__img {
       width: auto;
-      height: 220px;
+      height: 225px;
       background: url(/images/mobile/image-interactive.jpg) center/contain
         no-repeat;
     }
@@ -31,35 +28,42 @@
       position: static;
       width: auto;
       text-align: center;
-
-      padding: 40px 20px;
+      padding: 50px 20px 30px;
       h2 {
         font-size: 32px;
+        margin-bottom: 17px;
       }
     }
   }
   @import "mediaQgrid";
   .footer {
     display: block;
-    height: 470px;
+    height: 468px;
     padding: 0;
     &__left {
-      padding-top: 50px;
-      padding-bottom: 40px;
+      padding-top: 57px;
+      padding-bottom: 30px;
       img {
         display: block;
-        margin: auto;
+        margin: 0 auto 10px;
       }
       .footerLinksBox {
         flex-direction: column;
-
         width: auto;
+        a {
+          margin-bottom: 8px;
+          color: hsl(0, 0%, 90%);
+        }
       }
     }
     &__right {
       width: 100%;
       .socialLinks {
         justify-content: center;
+        margin-bottom: 7px;
+        div:nth-child(1) {
+          margin-left: 0;
+        }
       }
       .privacyPolicy {
         justify-content: center;

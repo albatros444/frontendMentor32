@@ -1,7 +1,9 @@
 .navbar {
   position: relative;
-  padding-top: 30px;
+  padding-top: 40px;
   z-index: 100;
+  margin-bottom: 160px;
+
   img {
     width: 165px;
     padding-left: 23px;
@@ -12,7 +14,7 @@
   ////hamburger menu///////////
   .hamburger {
     display: block;
-    margin-right: 20px;
+    margin-right: 25px;
     cursor: pointer;
     .line {
       width: 25px;
@@ -76,13 +78,14 @@
   background-color: black;
   transition: all 0.33s ease-in-out;
   .linksBoxModal {
-    padding-left: 23px;
+    padding-left: 24px;
+    padding-top: 16px;
     color: white;
     a {
       display: block;
       padding-bottom: 20px;
       font-family: $josefin;
-      font-size: 25px;
+      font-size: 24px;
       font-weight: 300;
       text-transform: uppercase;
     }
