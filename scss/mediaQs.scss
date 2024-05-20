@@ -1,37 +1,40 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .hero {
+    height: 173vw; //650px;
     padding: 0;
     background: url(/images/mobile/image-hero.jpg) left/cover;
     ///navbar
     @import "mediaQnavbar";
     ////////
     .framedTitle {
-      width: auto;
-      height: auto;
-      margin: 0 23px;
-      padding: 25px 23px 17px;
+      width: 87vw;
+      height: 53vw;
+      margin: 0 auto;
+      padding: 6.5vw 6vw 5vw; //25px 23px 17px
       h1 {
-        font-size: 39px;
+        font-size: 10.5vw; //39px;
         line-height: 0.97;
       }
     }
   }
   .vrMan {
-    padding: 95px 20px 50px;
+    padding: 95px 6vw 50px;
     &__img {
-      width: auto;
-      height: 225px;
-      background: url(/images/mobile/image-interactive.jpg) center/contain
+      height: 60vw; //225px;
+      background: url(/images/mobile/image-interactive.jpg) center/cover
         no-repeat;
     }
     &__text {
       position: static;
       width: auto;
       text-align: center;
-      padding: 50px 20px 30px;
+      height: auto;
+      padding: 50px 20px 20px;
       h2 {
-        font-size: 32px;
+        max-width: 280px;
+        margin: 0 auto;
         margin-bottom: 17px;
+        font-size: 32px;
       }
     }
   }

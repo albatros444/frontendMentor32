@@ -59,18 +59,19 @@ ul {
 }
 
 .hero {
-  height: 650px;
-  padding: 65px 130px 0px 165px;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/desktop/image-hero.jpg);
+  height: 45vw;
+  padding: 65px 9vw 0px 11vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/desktop/image-hero.jpg) left/cover;
 }
 .hero .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 120px;
+  margin-bottom: 8.3vw;
 }
 .hero .navbar img {
   padding-bottom: 3px;
+  padding-right: 60px;
 }
 .hero .navbar .linksBox {
   display: flex;
@@ -108,37 +109,37 @@ ul {
   display: none;
 }
 .hero .framedTitle {
-  width: 650px;
-  height: 278px;
-  padding: 38px 40px 35px 39px;
+  width: 45vw;
+  height: 19.5vw;
+  padding: 2.5vw;
   border: 2px solid white;
 }
 .hero .framedTitle h1 {
   color: white;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 70px;
+  font-size: 5vw;
   font-weight: 300;
   line-height: 1;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
 }
 
 .vrMan {
-  padding: 160px 165px 180px;
+  padding: 160px 11vw 180px;
   position: relative;
 }
 .vrMan__img {
-  height: 500px;
-  background: url(/images/desktop/image-interactive.jpg) no-repeat;
+  height: 35vw;
+  background: url(/images/desktop/image-interactive.jpg) no-repeat left/contain;
 }
 .vrMan__text {
   position: absolute;
-  top: 343px;
-  left: 735px;
-  width: 540px;
-  height: 320px;
-  padding-left: 95px;
-  padding-top: 95px;
+  bottom: 12vw;
+  left: 51vw;
+  width: 37vw;
+  height: 22vw;
+  padding-left: 6vw;
+  padding-top: 6vw;
   background-color: white;
 }
 .vrMan__text h2 {
@@ -159,7 +160,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 165px 77px;
+  padding: 0 11vw 77px;
 }
 .boxForGridTitle h2 {
   font-family: "Josefin Sans", sans-serif;
@@ -195,10 +196,10 @@ ul {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 450px 450px;
+  grid-template-columns: repeat(4, minmax(175px, 380px));
+  grid-template-rows: 31vw 31vw;
   gap: 30px;
-  padding: 0 165px 185px;
+  padding: 0 11vw 185px;
 }
 .grid .gridElem {
   position: relative;
@@ -219,7 +220,8 @@ ul {
   color: black;
 }
 .grid .gridElem h3 {
-  padding: 355px 40px 0 40px;
+  padding: 24vw 0px 0 40px;
+  width: 210px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 32px;
   font-weight: 300;
@@ -263,7 +265,7 @@ ul {
   display: flex;
   justify-content: space-between;
   height: 160px;
-  padding: 42px 165px;
+  padding: 42px 11vw;
   background-color: black;
 }
 .footer__left {
@@ -346,8 +348,9 @@ ul {
   color: hsl(0, 0%, 41%);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .hero {
+    height: 173vw;
     padding: 0;
     background: url(/images/mobile/image-hero.jpg) left/cover;
   }
@@ -355,11 +358,12 @@ ul {
     position: relative;
     padding-top: 40px;
     z-index: 100;
-    margin-bottom: 160px;
+    margin-bottom: 43vw;
   }
   .hero .navbar img {
     width: 165px;
     padding-left: 23px;
+    padding-right: 0;
   }
   .hero .navbar .linksBox {
     display: none;
@@ -447,32 +451,34 @@ ul {
     pointer-events: auto;
   }
   .hero .framedTitle {
-    width: auto;
-    height: auto;
-    margin: 0 23px;
-    padding: 25px 23px 17px;
+    width: 87vw;
+    height: 53vw;
+    margin: 0 auto;
+    padding: 6.5vw 6vw 5vw;
   }
   .hero .framedTitle h1 {
-    font-size: 39px;
+    font-size: 10.5vw;
     line-height: 0.97;
   }
   .vrMan {
-    padding: 95px 20px 50px;
+    padding: 95px 6vw 50px;
   }
   .vrMan__img {
-    width: auto;
-    height: 225px;
-    background: url(/images/mobile/image-interactive.jpg) center/contain no-repeat;
+    height: 60vw;
+    background: url(/images/mobile/image-interactive.jpg) center/cover no-repeat;
   }
   .vrMan__text {
     position: static;
     width: auto;
     text-align: center;
-    padding: 50px 20px 30px;
+    height: auto;
+    padding: 50px 20px 20px;
   }
   .vrMan__text h2 {
-    font-size: 32px;
+    max-width: 280px;
+    margin: 0 auto;
     margin-bottom: 17px;
+    font-size: 32px;
   }
   .boxForGridTitle {
     padding: 0;
@@ -494,10 +500,10 @@ ul {
     gap: 23px;
   }
   .grid .gridElem {
-    height: 121px;
+    height: 32vw;
   }
   .grid .gridElem h3 {
-    padding: 52px 30px 0 20px;
+    padding: 14vw 30px 0 20px;
     width: 180px;
     font-size: 24px;
     color: hsl(0, 0%, 90%);
@@ -570,6 +576,161 @@ ul {
   }
   .footer__right .privacyPolicy {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 350px) {
+  .hero .framedTitle h1 {
+    font-size: 33px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  .hero {
+    height: 722px;
+    width: 1750px;
+    padding: 65px 192px 0px 157px;
+    margin: 0 auto;
+  }
+  .hero .navbar {
+    margin-bottom: 140px;
+  }
+  .hero .framedTitle {
+    width: 688px;
+    height: 317px;
+    padding: 44px;
+  }
+  .hero .framedTitle h1 {
+    font-size: 80px;
+  }
+  .vrMan {
+    width: 1750px;
+    margin: 0 auto;
+    padding: 160px 192px 180px;
+  }
+  .vrMan__img {
+    height: 612px;
+  }
+  .vrMan__text {
+    bottom: 175px;
+    left: 892px;
+    width: 647px;
+    height: 385px;
+    padding-left: 105px;
+    padding-top: 105px;
+  }
+  .boxForGridTitle {
+    width: 1750px;
+    margin: 0 auto;
+    padding: 0 192px 77px;
+  }
+  .grid {
+    grid-template-rows: 542px 542px;
+    width: 1750px;
+    margin: 0 auto;
+    padding: 0 192px 185px;
+  }
+  .grid .gridElem h3 {
+    padding: 420px 0px 0 40px;
+  }
+}
+@media screen and (min-width: 1490px) and (max-width: 1750px) {
+  .vrMan__text {
+    bottom: 10vw;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .vrMan {
+    margin-bottom: 40px;
+  }
+  .vrMan__img {
+    background: url(/images/desktop/image-interactive.jpg) no-repeat left/contain;
+  }
+  .vrMan__text {
+    width: 432px;
+    height: 256px;
+    padding-left: 76px;
+    padding-top: 76px;
+  }
+  .vrMan__text h2 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .vrMan {
+    padding-bottom: 20px;
+  }
+  .vrMan__img {
+    width: auto;
+    height: 50vw;
+    background: url(/images/desktop/image-interactive.jpg) no-repeat left/cover;
+  }
+  .vrMan__text {
+    position: static;
+    width: 530px;
+    height: auto;
+    padding: 0;
+    margin: 90px auto;
+    text-align: center;
+  }
+  .vrMan__text h2 {
+    max-width: 390px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    font-size: 47px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 65vw);
+  }
+  .grid .gridElem h3 {
+    font-size: 38px;
+    padding-top: 52vw;
+    width: 256px;
+  }
+  .footer {
+    display: block;
+    height: 468px;
+    padding: 0;
+  }
+  .footer__left {
+    padding-top: 57px;
+    padding-bottom: 30px;
+  }
+  .footer__left img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+  .footer__left .footerLinksBox {
+    flex-direction: column;
+    width: auto;
+  }
+  .footer__left .footerLinksBox a {
+    margin-bottom: 8px;
+    color: hsl(0, 0%, 90%);
+  }
+  .footer__right {
+    width: 100%;
+  }
+  .footer__right .socialLinks {
+    justify-content: center;
+    margin-bottom: 7px;
+  }
+  .footer__right .socialLinks div:nth-child(1) {
+    margin-left: 0;
+  }
+  .footer__right .privacyPolicy {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1280px) and (min-width: 1000px) {
+  .grid .gridElem h3 {
+    width: 180px;
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .boxForGridTitle h2 {
+    font-size: 32px;
   }
 }
 

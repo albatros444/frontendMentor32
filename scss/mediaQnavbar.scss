@@ -2,11 +2,12 @@
   position: relative;
   padding-top: 40px;
   z-index: 100;
-  margin-bottom: 160px;
+  margin-bottom: 43vw; //160px;
 
   img {
     width: 165px;
     padding-left: 23px;
+    padding-right: 0;
   }
   .linksBox {
     display: none;

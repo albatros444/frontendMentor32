@@ -1,16 +1,16 @@
 .hero {
-  height: 650px;
-  padding: 65px 130px 0px 165px;
+  height: 45vw;
+  padding: 65px 9vw 0px 11vw; ///165px
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/images/desktop/image-hero.jpg);
-  // display: none;
+    url(/images/desktop/image-hero.jpg) left/cover;
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 8.3vw; //120px;
     img {
       padding-bottom: 3px;
+      padding-right: 60px;
     }
     .linksBox {
       display: flex;
@@ -51,39 +51,42 @@
     display: none;
   }
   .framedTitle {
-    width: 650px;
-    height: 278px;
-    padding: 38px 40px 35px 39px;
+    width: 45vw; // 650px;
+    height: 19.5vw; //278px;
+    padding: 2.5vw; //38px 40px 35px 39px
     border: 2px solid white;
     h1 {
       color: white;
       font-family: $josefin;
-      font-size: 70px;
+      font-size: 5vw; //70px;
       font-weight: 300;
       line-height: 1;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.01em;
       text-transform: uppercase;
     }
   }
 }
 
 .vrMan {
-  padding: 160px 165px 180px;
+  padding: 160px 11vw 180px; ///165px
   position: relative;
   // display: none;
   &__img {
-    // width: 730px;
-    height: 500px;
-    background: url(/images/desktop/image-interactive.jpg) no-repeat;
+    height: 35vw; //500px
+    // max-height: 526px;
+    background: url(/images/desktop/image-interactive.jpg) no-repeat
+      left/contain;
   }
   &__text {
     position: absolute;
-    top: 343px;
-    left: 735px;
-    width: 540px;
-    height: 320px;
-    padding-left: 95px;
-    padding-top: 95px;
+    // top: 343px;
+    bottom: 12vw;
+    // left: 735px;
+    left: 51vw;
+    width: 37vw; //540px;
+    height: 22vw; //320px;
+    padding-left: 6vw; //95px;
+    padding-top: 6vw; //95px;
     background-color: white;
     h2 {
       margin-bottom: 25px;

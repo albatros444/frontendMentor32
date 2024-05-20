@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   height: 160px;
-  padding: 42px 165px;
+  padding: 42px 11vw; //165px;
   background-color: black;
   &__left {
     padding-top: 2px;
@@ -44,7 +44,6 @@
   &__right {
     width: 280px;
     padding-top: 2px;
-
     .socialLinks {
       display: flex;
       justify-content: end;

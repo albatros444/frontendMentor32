@@ -1,0 +1,184 @@
+@media screen and (max-width: 350px) {
+  .hero {
+    .framedTitle {
+      h1 {
+        font-size: 33px;
+        padding-right: 30px;
+      }
+    }
+  }
+}
+////////////BIG SCREEN////////////////////
+@media screen and (min-width: 1750px) {
+  .hero {
+    height: 722px;
+    width: 1750px;
+    padding: 65px 192px 0px 157px; ///165px
+    margin: 0 auto;
+    .navbar {
+      margin-bottom: 140px;
+    }
+    .framedTitle {
+      width: 688px;
+      height: 317px;
+      padding: 44px;
+      h1 {
+        font-size: 80px;
+      }
+    }
+  }
+  .vrMan {
+    width: 1750px;
+    margin: 0 auto;
+    padding: 160px 192px 180px; ///165px
+
+    &__img {
+      height: 612px;
+    }
+    &__text {
+      bottom: 175px;
+      left: 892px;
+      width: 647px;
+      height: 385px; //320px;
+      padding-left: 105px; //95px;
+      padding-top: 105px; //95px;
+    }
+  }
+  .boxForGridTitle {
+    width: 1750px;
+    margin: 0 auto;
+    padding: 0 192px 77px; ///165px
+  }
+  .grid {
+    grid-template-rows: 542px 542px;
+    width: 1750px;
+    margin: 0 auto;
+    padding: 0 192px 185px; ///165px
+    .gridElem {
+      h3 {
+        padding: 420px 0px 0 40px;
+      }
+    }
+  }
+}
+
+////////////////VR MAN ///////////////////////////////
+
+@media screen and (min-width: 1490px) and (max-width: 1750px) {
+  .vrMan {
+    &__text {
+      bottom: 10vw;
+    }
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .vrMan {
+    // padding: 160px 165px 180px;
+    margin-bottom: 40px;
+    &__img {
+      background: url(/images/desktop/image-interactive.jpg) no-repeat
+        left/contain;
+    }
+    &__text {
+      width: 432px;
+      height: 256px;
+      padding-left: 76px;
+      padding-top: 76px;
+      h2 {
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .vrMan {
+    // padding: 95px 20px 50px;
+    padding-bottom: 20px;
+    &__img {
+      width: auto;
+      height: 50vw;
+      // height: 225px;
+      background: url(/images/desktop/image-interactive.jpg) no-repeat
+        left/cover;
+    }
+    &__text {
+      position: static;
+      width: 530px;
+      height: auto;
+      padding: 0;
+      margin: 90px auto;
+      text-align: center;
+      // padding: 50px 20px 20px;
+      h2 {
+        max-width: 390px;
+        margin: 0 auto;
+        margin-bottom: 17px;
+        font-size: 47px;
+      }
+    }
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 65vw);
+    .gridElem {
+      h3 {
+        font-size: 38px;
+        padding-top: 52vw;
+        width: 256px;
+      }
+    }
+  }
+  .footer {
+    display: block;
+    height: 468px;
+    padding: 0;
+    &__left {
+      padding-top: 57px;
+      padding-bottom: 30px;
+      img {
+        display: block;
+        margin: 0 auto 10px;
+      }
+      .footerLinksBox {
+        flex-direction: column;
+        width: auto;
+        a {
+          margin-bottom: 8px;
+          color: hsl(0, 0%, 90%);
+        }
+      }
+    }
+    &__right {
+      width: 100%;
+      .socialLinks {
+        justify-content: center;
+        margin-bottom: 7px;
+        div:nth-child(1) {
+          margin-left: 0;
+        }
+      }
+      .privacyPolicy {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) and (min-width: 1000px) {
+  .grid {
+    .gridElem {
+      h3 {
+        width: 180px;
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .boxForGridTitle {
+    h2 {
+      font-size: 32px;
+    }
+  }
+}
