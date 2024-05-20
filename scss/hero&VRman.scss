@@ -1,6 +1,6 @@
 .hero {
   height: 45vw;
-  padding: 65px 9vw 0px 11vw; ///165px
+  padding: 65px 11.4vw 0px 11.4vw; ///165px
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/images/desktop/image-hero.jpg) left/cover;
   .navbar {
@@ -21,9 +21,10 @@
         position: relative;
         display: inline-block;
         height: 33px;
+        padding-top: 4px;
         font-family: $alata;
         font-weight: 500;
-        color: white;
+        color: rgb(231, 229, 229);
         &::after {
           content: "";
           position: absolute;
@@ -68,25 +69,21 @@
 }
 
 .vrMan {
-  padding: 160px 11vw 180px; ///165px
+  padding: 160px 11.4vw 180px; ///165px
   position: relative;
-  // display: none;
   &__img {
     height: 35vw; //500px
-    // max-height: 526px;
     background: url(/images/desktop/image-interactive.jpg) no-repeat
       left/contain;
   }
   &__text {
     position: absolute;
-    // top: 343px;
     bottom: 12vw;
-    // left: 735px;
     left: 51vw;
     width: 37vw; //540px;
     height: 22vw; //320px;
-    padding-left: 6vw; //95px;
-    padding-top: 6vw; //95px;
+    padding-left: 6.5vw; //95px;
+    padding-top: 6.5vw; //95px;
     background-color: white;
     h2 {
       margin-bottom: 25px;

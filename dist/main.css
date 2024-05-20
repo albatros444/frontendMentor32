@@ -60,7 +60,7 @@ ul {
 
 .hero {
   height: 45vw;
-  padding: 65px 9vw 0px 11vw;
+  padding: 65px 11.4vw 0px 11.4vw;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/desktop/image-hero.jpg) left/cover;
 }
 .hero .navbar {
@@ -83,9 +83,10 @@ ul {
   position: relative;
   display: inline-block;
   height: 33px;
+  padding-top: 4px;
   font-family: "Alata", sans-serif;
   font-weight: 500;
-  color: white;
+  color: rgb(231, 229, 229);
 }
 .hero .navbar .linksBox a::after {
   content: "";
@@ -125,7 +126,7 @@ ul {
 }
 
 .vrMan {
-  padding: 160px 11vw 180px;
+  padding: 160px 11.4vw 180px;
   position: relative;
 }
 .vrMan__img {
@@ -138,8 +139,8 @@ ul {
   left: 51vw;
   width: 37vw;
   height: 22vw;
-  padding-left: 6vw;
-  padding-top: 6vw;
+  padding-left: 6.5vw;
+  padding-top: 6.5vw;
   background-color: white;
 }
 .vrMan__text h2 {
@@ -160,7 +161,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 11vw 77px;
+  padding: 0 11.4vw 77px;
 }
 .boxForGridTitle h2 {
   font-family: "Josefin Sans", sans-serif;
@@ -199,7 +200,7 @@ ul {
   grid-template-columns: repeat(4, minmax(175px, 380px));
   grid-template-rows: 31vw 31vw;
   gap: 30px;
-  padding: 0 11vw 185px;
+  padding: 0 11.4vw 185px;
 }
 .grid .gridElem {
   position: relative;
@@ -220,7 +221,7 @@ ul {
   color: black;
 }
 .grid .gridElem h3 {
-  padding: 24vw 0px 0 40px;
+  padding: 24.2vw 0px 0 40px;
   width: 210px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 32px;
@@ -265,7 +266,7 @@ ul {
   display: flex;
   justify-content: space-between;
   height: 160px;
-  padding: 42px 11vw;
+  padding: 42px 11.4vw;
   background-color: black;
 }
 .footer__left {
@@ -433,13 +434,13 @@ ul {
     transition: all 0.33s ease-in-out;
   }
   .hero .hamburgerModal .linksBoxModal {
-    padding-left: 24px;
+    padding-left: 6.4vw;
     padding-top: 16px;
     color: white;
   }
   .hero .hamburgerModal .linksBoxModal a {
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 5.3vw;
     font-family: "Josefin Sans", sans-serif;
     font-size: 24px;
     font-weight: 300;
@@ -506,7 +507,7 @@ ul {
     padding: 14vw 30px 0 20px;
     width: 180px;
     font-size: 24px;
-    color: hsl(0, 0%, 90%);
+    color: hsl(0, 1%, 83%);
   }
   .grid .gridElem:nth-child(4) h3 {
     width: 60px;
@@ -655,7 +656,7 @@ ul {
     font-size: 38px;
   }
 }
-@media screen and (max-width: 1000px) and (min-width: 700px) {
+@media screen and (max-width: 1050px) and (min-width: 700px) {
   .vrMan {
     padding-bottom: 20px;
   }
@@ -722,7 +723,7 @@ ul {
     justify-content: center;
   }
 }
-@media screen and (max-width: 1280px) and (min-width: 1000px) {
+@media screen and (max-width: 1280px) and (min-width: 1050px) {
   .grid .gridElem h3 {
     width: 180px;
     font-size: 26px;
